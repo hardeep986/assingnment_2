@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>User Profile</title>
+    </head>
+    <body>
+        <h2>Create User Profile</h2>
+        <fieldset style="width:400px; height:200px; background-color: grey;">
+        <form action="process-profile.php" method="post" enctype="multipart/form-data" style="margin:10px;">
+            <label for="username" style="margin:8px;">Username:</label>
+            <input type="text" id="username" name="username" required ><br/>
+            
+             <label for="email" style="margin:20px;">Email:</label>
+            <input type="email" id="email" name="email" required><br/>
+
+             <label for="avatar" style="margin:20px; margin-top:20px;">Profile-picture:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*"required><br/>
+
+            <input type="submit" value="Create Profile" style="margin-top:20px;">
+            </form>
+            </fieldset>
+        </body>
+</html>
